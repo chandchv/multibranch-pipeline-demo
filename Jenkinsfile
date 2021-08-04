@@ -19,9 +19,9 @@ pipeline {
             steps {
                 script {
                 cleanWs()
-                sh """
+               // sh """
                 echo "Cleaned Up Workspace For Project"
-                """
+              //  """
                 }
             }
         }
@@ -39,9 +39,9 @@ pipeline {
         stage(' Unit Testing') {
             steps {
                 script {
-                sh """
+               // sh """
                 echo "Running Unit Tests"
-                """
+               // """
                 }
             }
         }
@@ -49,9 +49,9 @@ pipeline {
         stage('Code Analysis') {
             steps {
                 script {
-                sh """
+               // sh """
                 echo "Running Code Analysis"
-                """
+               // """
                 }
             }
         }
@@ -62,13 +62,13 @@ pipeline {
             }
             steps {
                 script {
-                sh """
+               // sh """
                 echo "Building Artifact"
-                """
+              //  """
 
-                sh """
+              //  sh """
                 echo "Deploying Code"
-                """
+              //  """
                 }
             }
         }
